@@ -43,6 +43,7 @@ public class WebHandler {
         addServiceIfAvailable("vk", new VKAuthService("vk"));
         addServiceIfAvailable("tumblr", new TumblrAuthService("tumblr"));
         addServiceIfAvailable("twitch", new TwitchAuthService("twitch"));
+        addServiceIfAvailable("42", new FortyTwoAuthService("42"));
     }
 
     public void getRequestingUserFactions(HttpServerExchange exchange) throws Exception {
