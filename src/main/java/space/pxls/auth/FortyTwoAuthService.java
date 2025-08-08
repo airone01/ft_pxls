@@ -58,7 +58,7 @@ public class FortyTwoAuthService extends AuthService {
     }
 
     @Override
-    public String getName() { return "42"; }
+    public String getName() { return "fortytwo"; }
 
     private JSONObject getUserData(String token) throws UnirestException, InvalidAccountException {
         try {
@@ -82,7 +82,7 @@ public class FortyTwoAuthService extends AuthService {
 
     @Override
     public void reloadEnabledState() {
-        this.enabled = App.getConfig().getBoolean("oauth.42.enabled");
-        this.registrationEnabled = App.getConfig().getBoolean("oauth.42.registrationEnabled");
+        this.enabled = App.getConfig().getBoolean("oauth.fortytwo.enabled");
+        this.registrationEnabled = App.getConfig().getBoolean("oauth.fortytwo.registrationEnabled");
     }
 }
